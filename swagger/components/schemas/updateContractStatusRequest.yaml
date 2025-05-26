@@ -1,0 +1,36 @@
+type: object
+required:
+  - contractStatus
+properties:
+  contractStatus:
+    type: string
+    description: New status of the contract (e.g., PASSED, CANCELED)
+    example: PASSED
+  openingStatus:
+    type: string
+    description: New status of the opening (e.g., OPENED, CANCELED)
+    example: OPENED
+  passedAt:
+    type: string
+    format: date-time
+    description: Timestamp of contract approval (if passed)
+    example: 2025-05-24T08:47:00Z
+  canceledAt:
+    type: string
+    format: date-time
+    description: Timestamp of contract cancellation (if canceled)
+    example: 2025-05-24T08:47:00Z
+  openedAt:
+    type: string
+    format: date-time
+    description: Timestamp of opening activation (if opened)
+    example: 2025-05-24T08:47:00Z
+  openingCanceledAt:
+    type: string
+    format: date-time
+    description: Timestamp of opening cancellation (if canceled)
+    example: 2025-05-24T08:47:00Z
+  clientInformation:
+    $ref: '../schemas/clientInformation.yaml'
+  shopReviewInformation:
+    $ref: '../schemas/shopReviewInformation.yaml'

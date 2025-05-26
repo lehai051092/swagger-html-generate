@@ -1,0 +1,31 @@
+post:
+  summary: API-015 - Receive Re-Review Request from Bongo
+  description: Receives a re-review request from Bongo, updates the application and contract details, and processes the review again.
+  operationId: receiveReReviewRequest
+  tags:
+    - Review Payment
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/reReviewRequest.yaml'
+  responses:
+    '200':
+      description: Re-review request received and processed successfully
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/reReviewResponse.yaml'
+    '400':
+      description: Bad request - Invalid application ID or revision details
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'

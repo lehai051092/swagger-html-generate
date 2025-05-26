@@ -1,0 +1,4 @@
+node_modules
+swagger-dist.yaml
+docs
+docs/*

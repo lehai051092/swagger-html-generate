@@ -1,0 +1,31 @@
+type: object
+required:
+  - applicationId
+  - revisionDetails
+properties:
+  applicationId:
+    type: string
+    description: ID of the application to re-review
+    example: app_123456
+  contractId:
+    type: string
+    description: ID of the contract associated with the application (if applicable)
+    example: contract_789012
+  revisionDetails:
+    type: object
+    description: Details of the revisions requested by GMO
+    properties:
+      clientInformation:
+        $ref: '../schemas/clientInformation.yaml'
+      clientReviewInformation:
+        $ref: '../schemas/clientReviewInformation.yaml'
+      shopInformation:
+        $ref: '../schemas/shopInformation.yaml'
+      shopReviewInformation:
+        $ref: '../schemas/shopReviewInformation.yaml'
+      creditCardReviewInformation:
+        $ref: '../schemas/creditCardReviewInformation.yaml'
+  comments:
+    type: string
+    description: Additional comments from Bongo or GMO
+    example: "Please update the company name and shop URL as per GMO's feedback."

@@ -1,0 +1,46 @@
+type: object
+required:
+  - applicationId
+  - serviceType
+  - clientInformation
+  - clientReviewInformation
+  - shopInformation
+  - shopReviewInformation
+  - creditCardReviewInformation
+properties:
+  applicationId:
+    type: string
+    description: ID of the validated application
+    example: app_123456
+  merchantNumber:
+    type: string
+    description: Merchant number assigned by GMO
+    example: 12345678
+  serviceType:
+    type: string
+    description: Service type (reserve/net_shop)
+    example: net_shop
+  passedAt:
+    type: string
+    format: date-time
+    description: Timestamp of review approval
+    example: 2025-05-24T08:47:00Z
+  status:
+    type: string
+    description: Activation status
+    example: OPENED
+  openedAt:
+    type: string
+    format: date-time
+    description: Timestamp of activation
+    example: 2025-05-24T08:47:00Z
+  clientInformation:
+    $ref: './clientInformation.yaml'
+  clientReviewInformation:
+    $ref: './clientReviewInformation.yaml'
+  shopInformation:
+    $ref: './shopInformation.yaml'
+  shopReviewInformation:
+    $ref: './shopReviewInformation.yaml'
+  creditCardReviewInformation:
+    $ref: './creditCardReviewInformation.yaml'

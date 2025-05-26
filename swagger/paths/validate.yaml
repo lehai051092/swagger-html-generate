@@ -1,0 +1,31 @@
+post:
+  summary: API-016 - Validate Payment Registration
+  description: Validates the payment registration details submitted by a business and publishes the result to a message queue for further review.
+  operationId: validatePaymentRegistration
+  tags:
+    - Review Payment
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/validateApplicationRequest.yaml'
+  responses:
+    '200':
+      description: Validation successful, message published to queue
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/validateApplicationResponse.yaml'
+    '400':
+      description: Bad request - Validation failed
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'

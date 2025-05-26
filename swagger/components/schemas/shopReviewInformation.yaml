@@ -1,0 +1,38 @@
+type: object
+required:
+  - shopUrl
+  - sellerName
+  - sellerLocation
+  - sellerLocationPostalCode
+  - representativeOrGeneralManager
+  - representativeOrGeneralManagerKana
+  - customerServiceContactPhone
+properties:
+  shopUrl:
+    type: string
+    description: Shop URL (G-003)
+    example: http://www.gmo-pg.com/online
+  sellerName:
+    type: string
+    description: Seller name (G-031)
+    example: GMO Payment Gateway, Inc.
+  sellerLocation:
+    type: string
+    description: Seller location (G-032)
+    example: 1-2-3 Dogenzaka, Shibuya-ku, Tokyo
+  sellerLocationPostalCode:
+    type: string
+    description: Seller location postal code (G-033)
+    example: 150-0043
+  representativeOrGeneralManager:
+    type: string
+    description: Representative or general manager (G-034)
+    example: Shibuya Taro
+  representativeOrGeneralManagerKana:
+    type: string
+    description: Representative or general manager in Kana (G-035)
+    example: シブヤ　タロウ
+  customerServiceContactPhone:
+    type: string
+    description: Customer service contact phone (G-039)
+    example: 03-3464-2346

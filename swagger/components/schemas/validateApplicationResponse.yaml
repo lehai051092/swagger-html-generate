@@ -1,0 +1,20 @@
+type: object
+properties:
+  applicationId:
+    type: string
+    description: ID of the created application
+    example: app_123456
+  status:
+    type: string
+    description: Validation status
+    example: SUCCESS
+  messageQueueId:
+    type: string
+    description: ID of the message published to the queue
+    example: msg_789012
+  errors:
+    type: array
+    items:
+      type: string
+    description: List of validation errors
+    example: ["Invalid postal code format"]

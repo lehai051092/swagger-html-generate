@@ -1,0 +1,39 @@
+patch:
+  summary: API-014 - Update Contract/Opening Status and Notify Bongo
+  description: Updates the status of a contract and its associated opening record, then notifies the third-party system (Bongo) via REST API.
+  operationId: updateContractStatus
+  tags:
+    - Review Payment
+  parameters:
+    - name: contractId
+      in: path
+      required: true
+      schema:
+        type: string
+      description: ID of the contract to update
+      example: contract_789012
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/updateContractStatusRequest.yaml'
+  responses:
+    '200':
+      description: Contract and opening status updated successfully and Bongo notified
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/updateContractStatusResponse.yaml'
+    '400':
+      description: Bad request - Invalid status or contract ID
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'

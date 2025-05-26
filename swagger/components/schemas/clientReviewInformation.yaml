@@ -1,0 +1,33 @@
+type: object
+required:
+  - representativeBirthDate
+  - representativeAddressPostalCode
+  - representativeAddress
+  - representativeAddressBuilding
+  - representativeAddressKana
+  - representativeContactPhoneNumber
+properties:
+  representativeBirthDate:
+    type: string
+    description: Representative birth date (B-012)
+    example: 19620716
+  representativeAddressPostalCode:
+    type: string
+    description: Representative address postal code (B-013)
+    example: 150-0043
+  representativeAddress:
+    type: string
+    description: Representative address (B-014)
+    example: 1-2-3 Dogenzaka, Shibuya-ku, Tokyo
+  representativeAddressBuilding:
+    type: string
+    description: Representative address building (B-015)
+    example: PG Court 12F
+  representativeAddressKana:
+    type: string
+    description: Representative address in Kana (B-016)
+    example: 東京都渋谷区道玄坂１－２－３
+  representativeContactPhoneNumber:
+    type: string
+    description: Representative contact phone number (B-017)
+    example: 03-1234-5678

@@ -1,0 +1,28 @@
+type: object
+properties:
+  contractId:
+    type: string
+    description: ID of the updated contract
+    example: contract_789012
+  openingId:
+    type: string
+    description: ID of the updated opening record
+    example: opening_345678
+  contractStatus:
+    type: string
+    description: Updated status of the contract
+    example: PASSED
+  openingStatus:
+    type: string
+    description: Updated status of the opening
+    example: OPENED
+  bongoNotificationStatus:
+    type: string
+    description: Status of the notification sent to Bongo
+    example: SUCCESS
+  errors:
+    type: array
+    items:
+      type: string
+    description: List of errors
+    example: ["Failed to notify Bongo"]

@@ -1,0 +1,24 @@
+type: object
+properties:
+  applicationId:
+    type: string
+    description: ID of the application being re-reviewed
+    example: app_123456
+  contractId:
+    type: string
+    description: ID of the contract associated with the application
+    example: contract_789012
+  status:
+    type: string
+    description: Status of the re-review request (e.g., RECEIVED, PROCESSING, COMPLETED)
+    example: RECEIVED
+  bongoNotificationStatus:
+    type: string
+    description: Status of the notification sent to Bongo (if applicable)
+    example: SUCCESS
+  errors:
+    type: array
+    items:
+      type: string
+    description: List of errors
+    example: ["Invalid application ID"]

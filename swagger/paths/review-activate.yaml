@@ -1,0 +1,31 @@
+post:
+  summary: API-008 - Review and Activate Payment Service
+  description: Reviews and activates the payment service after validation. This API is called by the review system after consuming a message from the queue.
+  operationId: reviewAndActivatePaymentService
+  tags:
+    - Review Payment
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/reviewAndActivateRequest.yaml'
+  responses:
+    '200':
+      description: Review and activation successful
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/reviewAndActivateResponse.yaml'
+    '400':
+      description: Bad request - Review or activation failed
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'
+    '500':
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/errorResponse.yaml'

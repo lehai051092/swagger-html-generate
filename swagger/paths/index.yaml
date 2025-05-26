@@ -1,0 +1,8 @@
+/payment/validate:
+  $ref: './validate.yaml'
+/payment/review-activate:
+  $ref: './review-activate.yaml'
+/payment/contract/{contractId}/status:
+  $ref: './update-contract-status.yaml'
+/payment/re-review:
+  $ref: './re-review.yaml'

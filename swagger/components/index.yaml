@@ -1,0 +1,25 @@
+schemas:
+  ClientInformation:
+    $ref: './schemas/clientInformation.yaml'
+  ClientReviewInformation:
+    $ref: './schemas/clientReviewInformation.yaml'
+  ShopInformation:
+    $ref: './schemas/shopInformation.yaml'
+  ShopReviewInformation:
+    $ref: './schemas/shopReviewInformation.yaml'
+  CreditCardReviewInformation:
+    $ref: './schemas/creditCardReviewInformation.yaml'
+  ValidateApplicationResponse:
+    $ref: './schemas/validateApplicationResponse.yaml'
+  ReviewAndActivateResponse:
+    $ref: './schemas/reviewAndActivateResponse.yaml'
+  UpdateContractStatusRequest:
+    $ref: './schemas/updateContractStatusRequest.yaml'
+  UpdateContractStatusResponse:
+    $ref: './schemas/updateContractStatusResponse.yaml'
+  ReReviewRequest:
+    $ref: './schemas/reReviewRequest.yaml'
+  ReReviewResponse:
+    $ref: './schemas/reReviewResponse.yaml'
+  ErrorResponse:
+    $ref: './schemas/errorResponse.yaml'

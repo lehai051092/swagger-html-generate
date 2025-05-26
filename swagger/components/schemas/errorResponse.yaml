@@ -1,0 +1,12 @@
+type: object
+properties:
+  message:
+    type: string
+    description: Error message
+    example: Invalid request
+  errors:
+    type: array
+    items:
+      type: string
+    description: List of error details
+    example: ["Field 'applicationId' is required"]

@@ -1,0 +1,15 @@
+type: object
+required:
+  - clientInformation
+  - clientReviewInformation
+  - shopInformation
+  - shopReviewInformation
+properties:
+  clientInformation:
+    $ref: './clientInformation.yaml'
+  clientReviewInformation:
+    $ref: './clientReviewInformation.yaml'
+  shopInformation:
+    $ref: './shopInformation.yaml'
+  shopReviewInformation:
+    $ref: './shopReviewInformation.yaml'

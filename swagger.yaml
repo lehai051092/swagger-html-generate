@@ -1,0 +1,9 @@
+openapi: 3.0.3
+info:
+  title: Review Payment API with Pub/Sub and Bongo Integration
+  description: API for validating, activating, updating, and re-reviewing payment registration status.
+  version: 1.0.0
+paths:
+  $ref: './swagger/paths/index.yaml'
+components:
+  $ref: './swagger/components/index.yaml'

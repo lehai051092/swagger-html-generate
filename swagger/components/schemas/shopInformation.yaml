@@ -1,0 +1,33 @@
+type: object
+required:
+  - shopName
+  - recipientContactCompanyName
+  - recipientContactName
+  - recipientContactNameKana
+  - recipientContactPhoneNumber
+  - recipientContactEmail
+properties:
+  shopName:
+    type: string
+    description: Shop name (F-005)
+    example: GMO PG Online Store
+  recipientContactCompanyName:
+    type: string
+    description: Recipient contact company name (F-008)
+    example: GMO Payment Gateway Inc.
+  recipientContactName:
+    type: string
+    description: Recipient contact name (F-009)
+    example: Taro Yamada
+  recipientContactNameKana:
+    type: string
+    description: Recipient contact name in Kana (F-010)
+    example: ヤマダ　タロウ
+  recipientContactPhoneNumber:
+    type: string
+    description: Recipient contact phone number (F-013)
+    example: 03-2233-4455
+  recipientContactEmail:
+    type: string
+    description: Recipient contact email (F-015)
+    example: taro.yamada@gmo-pg.com

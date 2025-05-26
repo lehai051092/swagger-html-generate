@@ -1,0 +1,23 @@
+type: object
+required:
+  - paymentMethod
+  - threeDSecureSupport
+  - securityCodeSupport
+  - cardInformationRetentionStatus
+properties:
+  paymentMethod:
+    type: string
+    description: Payment method (lump sum, revolving, installment)
+    example: lump sum
+  threeDSecureSupport:
+    type: string
+    description: 3D Secure support status
+    example: Available (mandatory)
+  securityCodeSupport:
+    type: string
+    description: Security code support status
+    example: Available
+  cardInformationRetentionStatus:
+    type: string
+    description: Card information retention status
+    example: Scheduled for non-retention
