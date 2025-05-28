@@ -1,6 +1,6 @@
-# NETSHOP Payment API Swagger Demo
+# Review Payment API Swagger Demo
 
-This project provides a simple Node.js application to serve the Swagger UI for the NETSHOP Payment API, which includes endpoints for validating, activating, updating, and re-reviewing payment registration status with pub/sub and Bongo integration.
+This project provides a simple Node.js application to serve the Swagger UI for the Review Payment API, which includes endpoints for validating, activating, updating, and re-reviewing payment registration status with pub/sub and Bongo integration.
 
 ## Prerequisites
 
@@ -21,22 +21,7 @@ This project provides a simple Node.js application to serve the Swagger UI for t
    ```
 
 ## Usage
-
-### Option 1: Run Swagger UI on Local Server (Port 5001)
-
-1. Start the Node.js server:
-   ```bash
-   npm start
-   ```
-
-2. Open your browser and navigate to:
-   ```
-   http://localhost:5001/api-docs
-   ```
-
-   This will display the Swagger UI where you can explore the NETSHOP Payment API.
-
-### Option 2: Generate Static HTML
+### Generate Static HTML
 
 1. Generate the static HTML file using Redoc:
    ```bash
@@ -65,20 +50,19 @@ This project provides a simple Node.js application to serve the Swagger UI for t
   - `components/`: Reusable components (schemas).
   - `paths/`: API endpoints.
 - `src/index.js`: Main Node.js application file.
-- `docs/`: Generated static HTML documentation (after running `npm run generate-html`).
+- `docs/`: Generated static HTML documentation (after running `npm run gen-html`).
 - `package.json`: Project dependencies and scripts.
 - `README.md`: This file.
 
 ## Scripts
 
 - `npm start`: Runs the Node.js server to serve Swagger UI on port 5001.
-- `npm run generate-html`: Generates a static HTML file for the API documentation using Redoc.
+- `npm run gen-html`: Generates a static HTML file for the API documentation using Redoc.
 
 ## Dependencies
 
 - `express`: Web framework for Node.js.
 - `swagger-ui-express`: Middleware to serve Swagger UI.
-- `yamljs`: Library to parse YAML files.
 - `redoc-cli`: CLI tool to generate static HTML documentation.
 - `swagger-cli`: CLI tool to bundle Swagger files.
 
@@ -86,7 +70,7 @@ This project provides a simple Node.js application to serve the Swagger UI for t
 
 - The Swagger specification is split into multiple files for better readability and maintainability.
 - Ensure that port 5001 is not in use by another application when running the server.
-- If you modify the Swagger files, re-run `npm run generate-html` to update the static HTML.
+- If you modify the Swagger files, re-run `npm run gen-html` to update the static HTML.
 
 ## License
 
