@@ -51,3 +51,11 @@ properties:
     type: string
     description: Representative name in Kana (A-012)
     example: シブヤ　タロウ
+  buildingName:
+    type: string
+    description: Building name of the corporate address
+    example: Shibuya Fukuras
+  buildingNameKana:
+    type: string
+    description: Building name in Kana
+    example: シブヤフクラス

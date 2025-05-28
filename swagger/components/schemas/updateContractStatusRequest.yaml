@@ -34,3 +34,4 @@ properties:
     $ref: '../schemas/clientInformation.yaml'
   shopReviewInformation:
     $ref: '../schemas/shopReviewInformation.yaml'
+    

@@ -3,8 +3,6 @@ required:
   - representativeBirthDate
   - representativeAddressPostalCode
   - representativeAddress
-  - representativeAddressBuilding
-  - representativeAddressKana
   - representativeContactPhoneNumber
 properties:
   representativeBirthDate:
@@ -31,3 +29,19 @@ properties:
     type: string
     description: Representative contact phone number (B-017)
     example: 03-1234-5678
+  representativePrefectureKana:
+    type: string
+    description: Representative prefecture in Kana
+    example: トウキョウト
+  representativeCityKana:
+    type: string
+    description: Representative city in Kana
+    example: シブヤク
+  representativeTownKana:
+    type: string
+    description: Representative town in Kana
+    example: ドウゲンザカ
+  representativeBuildingNameKana:
+    type: string
+    description: Representative building name in Kana
+    example: ピージーコート
